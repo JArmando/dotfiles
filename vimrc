@@ -174,3 +174,15 @@ set diffopt+=vertical
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+
+set background=dark
+colorscheme solarized8
+set guifont=Inconsolata\ Nerd\ Font\ Mono
+
+let g:NERDTreeChDirMode       = 2
+let g:ctrlp_working_path_mode = 'w'
+
+map <C-n> :NERDTreeToggle<CR>
+
+let g:NERDTreeHijackNetrw = 1
+au VimEnter NERD_tree_1 enew | execute 'NERDTree '.argv()[0]

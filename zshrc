@@ -39,3 +39,4 @@ _load_settings "$HOME/.zsh/configs"
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
+source ~/.fonts/*.sh
