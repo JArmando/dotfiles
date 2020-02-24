@@ -1,0 +1,6 @@
+{
+  "tsserver.log":"verbose",
+  "diagnostic.warningSign":" ",
+  "diagnostic.errorSign":" ✘",
+  "diagnostic.infoSign":" "
+}
