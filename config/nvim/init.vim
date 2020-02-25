@@ -21,6 +21,9 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
+" Terminal remaps
+tnoremap <Esc> <C-\><C-n>
+
 " Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
 
