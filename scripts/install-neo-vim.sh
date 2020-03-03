@@ -18,3 +18,6 @@ esac
 
 curl -sSL "${url}/${filename}" |
   tar -C "${HOME}/local" -xz --strip-components=1 -f -
+
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim

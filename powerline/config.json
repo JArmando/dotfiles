@@ -1,0 +1,9 @@
+{
+  "ext": {
+    "shell": {
+      "function": "powerline_gitstatus.gitstatus",
+      "priority": 40,
+      "theme": "default_leftonly"
+    }
+  }
+}

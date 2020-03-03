@@ -2,7 +2,7 @@
 " Leader
 let mapleader = "'"
 
-
+set mouse=nv
 set backspace=2   " Backspace deletes like most programs in insert mode set nobackup
 set nowritebackup
 set noswapfile    " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
@@ -22,7 +22,7 @@ set shiftround
 set expandtab
 
 " Terminal remaps
-tnoremap <Esc> <C-\><C-n>
+tnoremap <Esc><Esc> <C-\><C-n>
 
 " Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
@@ -41,16 +41,16 @@ set numberwidth=5
 " Tab completion
 " will insert tab at beginning of line,
 " will use completion if not at beginning
-set wildmode=list:longest,list:full
-function! InsertTabWrapper()
-    let col = col('.') - 1
-    if !col || getline('.')[col - 1] !~ '\k'
-        return "\<Tab>"
-    else
-        return "\<C-p>"
-    endif
-endfunction
-inoremap <Tab> <C-r>=InsertTabWrapper()<CR>
+" set wildmode=list:longest,list:full
+" function! InsertTabWrapper()
+"     let col = col('.') - 1
+"     if !col || getline('.')[col - 1] !~ '\k'
+"         return "\<Tab>"
+"     else
+"         return "\<C-p>"
+"     endif
+" endfunction
+" inoremap <Tab> <C-r>=InsertTabWrapper()<CR>
 inoremap <S-Tab> <C-n>
 
 " Switch between the last two files
@@ -144,13 +144,9 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " new setup for coc
-set cmdheight=2
 set pumblend=20
 hi PmenuSel blend=0
 set pumheight=10
-set updatetime=300
-set shortmess+=c
-set signcolumn=yes
 
 function! s:check_back_space() abort
   let col = col('.') - 1
