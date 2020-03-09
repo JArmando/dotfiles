@@ -1,3 +1,7 @@
+sudo add-apt-repository ppa:martin-frost/thoughtbot-rcm
+sudo apt-get update
+sudo apt-get install rcm
+
 if [ -e /usr/bin/node ]; then
   echo "NodeJS already installed"
 else
